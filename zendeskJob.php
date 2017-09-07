@@ -9,7 +9,7 @@ function getZDIDs()
         echo "connecting to Zendesk .. ";
         $strykaIDs = []; //declare empty array to insert stryka IDs
 
-        // get Stryka IDs from tickets
+        // get Stryka IDs from tickets 
         $currURL = "https://plutora.zendesk.com/api/v2/search.json?query=type%3Aticket+status%3Csolved";
 
   while ($currURL != ''){
